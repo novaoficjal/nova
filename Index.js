@@ -7,7 +7,6 @@ const client = new SteamUser();
 const logOnOptions = {
 	accountName: config.username,
 	password: config.password,
-	twoFactorCode: SteamTotp.generateAuthCode(config.sharedSecret)
 };
 
 client.logOn(logOnOptions);
